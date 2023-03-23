@@ -21,7 +21,7 @@
         $sql->execute();
         while($row = $sql->fetch()){
     ?>
-    <img src="<?php echo $row['link'] ?>" alt="">
+    <img src="<?php echo $row['link'] ?>" alt="" width="300px">
     <?php
         }
     ?>

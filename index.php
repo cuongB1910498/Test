@@ -18,7 +18,12 @@
                 ]
             );
         
-            $data = $cloudinary->uploadApi()->upload($hinhanh_tmp, ['public_id' => 'olympic_flag']);
+            $data = $cloudinary->uploadApi()->upload(
+                $hinhanh_tmp, 
+                [
+                    'public_id' => $hinhanh
+                ]
+            );
         
             $stmt = $pdo->prepare("INSERT into tbl_img(name, link) VALUES(:name, :link)");
             $stmt->execute([
@@ -26,7 +31,7 @@
                 'link'=> $data['secure_url']
             ]);
         } 
-    ?>
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
