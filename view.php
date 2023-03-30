@@ -21,7 +21,7 @@
         $sql->execute();
         while($row = $sql->fetch()){
     ?>
-    <img src="<?php echo $row['link'] ?>" alt="" width="300px">
+    <a href="del.php?name=<?php echo $row['name']?>"><img src="<?php echo $row['link'] ?>" alt="" width="300px"></a>
     <?php
         }
     ?>

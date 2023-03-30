@@ -1,5 +1,7 @@
 {
     "require": {
-        "cloudinary/cloudinary_php": "^2.10"
+        "cloudinary/cloudinary_php": "^2.10",
+        "gregwar/captcha-bundle": "^1.0",
+        "gregwar/captcha": "^1.*"
     }
 }

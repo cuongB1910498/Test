@@ -47,8 +47,8 @@ class ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -69,6 +69,16 @@ class ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'G' => 
+        array (
+            'Gregwar\\CaptchaBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/gregwar/captcha-bundle',
+            ),
         ),
     );
 
@@ -697,6 +707,7 @@ class ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit2b95f697beb9b6cbbec2cc1cc1cdd8d1::$classMap;
 
         }, null, ClassLoader::class);

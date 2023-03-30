@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '0728eac17e3ea81094ddcff37428f3f0e1c90329',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '0728eac17e3ea81094ddcff37428f3f0e1c90329',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -34,6 +34,15 @@
             'reference' => '7e6fd25091bf783cd3c95f73418d472a4b3febb7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../cloudinary/transformation-builder-sdk',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'gregwar/captcha-bundle' => array(
+            'pretty_version' => 'v1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => 'a204bdc3f9655710e4b0574d112e23780b224dc5',
+            'type' => 'captcha-bundle',
+            'install_path' => __DIR__ . '/../gregwar/captcha-bundle/Gregwar/CaptchaBundle',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
